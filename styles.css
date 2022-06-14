@@ -13,10 +13,9 @@ body{
 #container-01{
     margin-top: 30px;
     width: 80%;
-    max-width: 380px;
+    max-width: 360px;
     
     margin-inline: auto;
-    /*border: 2px solid red;*/
 }
 
 img{
@@ -32,7 +31,7 @@ h1{
 }
 
 p{
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     opacity: 0.7;
 }
@@ -64,6 +63,22 @@ button{
 
 button:hover{
 
-    filter: drop-shadow(0px 0px 5px rgba(205, 158, 255, 0.8));
+    filter: drop-shadow(0px 0px 5px rgba(224, 195, 255, 0.678));
     cursor: pointer;
+}
+
+
+#resposta{
+
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight:normal;
+    transition: opacity 1s ;
+}
+
+#resposta div{
+
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight:normal;
 }
