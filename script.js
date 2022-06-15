@@ -1,5 +1,6 @@
-const elementoResposta = document.querySelector("resposta");
-const inputPergunta = document.querySelector("pergunta");
+const elementoResposta = document.querySelector("#resposta");
+const botaoPerguntar = document.querySelector("#buttonPergunta");
+const inputPergunta = document.querySelector("#inputPergunta");
 let resposta = [
     "Nao",
     "Certeza!",
@@ -33,12 +34,19 @@ function fazerPergunta(){
     elementoResposta.innerHTML = "Digite sua pergunta";
     return;
   }
+
   const pergunta = "<div>" + inputPergunta.value + "</div>";
   elementoResposta.innerHTML = pergunta + resposta[numeroAleatorio];
 
+  elementoResposta.style.opacity = 1;
+  inputPergunta.value = "";
+
   setTimeout(function(){
 
-    elementoResposta.style.opacity = 0
+    elementoResposta.style.opacity = 0;    
+    botaoPerguntar.setAttribute("disabled",true);
 
-  },3000)
+  },3000) 
+
+  botaoPerguntar.setAttribute("enable", true);
 }

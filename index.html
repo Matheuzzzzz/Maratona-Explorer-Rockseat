@@ -5,13 +5,14 @@
 <head>
 
     <title>Maratona Explorer</title>
-    
+
     <meta charset="utf-8">
     
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <script 
         type="text/javascript" 
         src="./script.js" 
+  
         defer=""
     >
     </script>
@@ -29,15 +30,14 @@
 
         <p>Clique em fazer pergunta para que o seu destino seja revelado.</p>
         <input 
-            id="pergunta" 
+            id="inputPergunta" 
             type="text" 
-            name="pergunta"
             placeholder="Digite sua pergunta"
-            />
-        <button onclick=fazerPergunta()> Fazer pergunta </button>
+        />
+        <button id="buttonPergunta" onclick=fazerPergunta()> Fazer pergunta </button>
     </div>
 
-    <h1 id="resposta"> <div></div></h1>    
+    <h1 id="resposta"></h1>    
 </body>
 
 </html>    

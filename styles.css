@@ -79,6 +79,7 @@ button:hover{
 #resposta div{
 
     margin-top: 50px;
+    opacity: 0.5;
     font-size: 20px;
     font-weight:normal;
 }
